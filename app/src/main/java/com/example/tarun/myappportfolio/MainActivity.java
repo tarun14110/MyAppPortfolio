@@ -57,7 +57,38 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user touches the button */
     public void displayToast(View view) {
 
-       
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = null;
+        String text="This button will launch ";
+        switch (view.getId()) {
+            case R.id.app_1:
+                text=text.concat(getResources().getString(R.string.app_1));
+                toast = Toast.makeText(context, text, duration);
+                break;
+            case R.id.app_2:
+                text=text.concat(getResources().getString(R.string.app_2));
+                toast= Toast.makeText(context, text, duration);
+                break;
+            case R.id.app_3:
+                text=text.concat(getResources().getString(R.string.app_3));
+                toast= Toast.makeText(context, text, duration);
+                break;
+            case R.id.app_4:
+                text=text.concat(getResources().getString(R.string.app_4));
+                toast= Toast.makeText(context, text, duration);
+                break;
+            case R.id.app_5:
+                text=text.concat(getResources().getString(R.string.app_5));
+                toast= Toast.makeText(context, text, duration);
+                break;
+            case R.id.app_6:
+                text=text.concat(getResources().getString(R.string.app_6));
+                toast= Toast.makeText(context, text, duration);
+                break;
+
+        }
+        toast.show();
     }
 
 
